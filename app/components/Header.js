@@ -35,7 +35,7 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="PharmaEx Logo"
-              width={327}
+              width={260}
               height={54}
             />
             <div className="text-xs md:text-sm text-gray-800 leading-tight">

@@ -70,7 +70,7 @@ export default function EligibilitySection() {
                 />
               </div>
               <div className="bg-green-700 text-white text-center px-4 py-6 flex flex-col justify-start items-center ">
-                <h3 className="text-xl font-bold underline">{item.title}</h3>
+                <h3 className="text-xl font-bold">{item.title}</h3>
                 <p className="mt-2 text-sm">{item.desc}</p>
               </div>
             </div>

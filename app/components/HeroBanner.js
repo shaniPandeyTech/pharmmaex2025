@@ -16,7 +16,7 @@ export default function HeroBanner() {
       </video>
 
       {/* Overlay content */}
-      <div className="relative z-20 w-full bg-black/40">
+      <div className="relative z-20 w-full h-full bg-black/40">
         <div className="container mx-auto px-4 h-full flex items-center justify-center">
           <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6">
 

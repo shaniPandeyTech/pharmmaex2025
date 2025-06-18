@@ -29,3 +29,6 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+.inputStyle {
+  @apply w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm;
+}
