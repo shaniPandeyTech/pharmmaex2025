@@ -10,6 +10,7 @@ import ExhibitorSlider from "./components/ExhibitorSlider";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroBanner from "./components/HeroBanner";
+import MarqueeBanner from "./components/MarqueeBanner";
 import PharmaConnections from "./components/PharmaConnections";
 import MumbaiRegistration from "./components/Registration";
 import ReviewSlider from "./components/ReviewSlider";
@@ -21,6 +22,7 @@ export default function Home() {
     <main className="font-sans">
     
     <HeroBanner />
+    <MarqueeBanner />
     <AboutPharmaEx />
     <ExhibitionSeries />
     <ExhibitionStats />

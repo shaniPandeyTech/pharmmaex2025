@@ -13,16 +13,17 @@ const ExhibitorRegistrationForm = () => {
       </div>
 
       {/* Image Banner */}
-      <div className="w-full max-w-5xl mx-auto rounded-xl overflow-hidden mb-8 shadow-md">
+      <div className="w-full max-w-5xl mx-auto rounded-xl overflow-hidden mb-8 shadow-md z-10">
         <img
-          src="/images/exhibitor-banner.jpg" // Replace with your actual path
+          src="/images/space-exhibitor.jpg" // Replace with your actual path
           alt="Exhibition Banner"
           className="w-full object-cover h-[300px]"
         />
       </div>
 
       {/* Form Section */}
-      <div className="w-full max-w-5xl mx-auto bg-white shadow-lg p-6 md:p-10 rounded-2xl">
+      <div className=" relative w-full max-w-5xl mx-auto  shadow-lg p-6 md:p-10 rounded-2xl  z-20">
+      {/* <div className="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-transparent via-white to-white z-10"></div> */}
         <h2 className="text-2xl font-bold mb-4 text-center">Exhibitor Registration Form</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Input Fields */}

@@ -7,6 +7,7 @@ export default function HighlightExhibitions() {
       "/images/e1.jpg", "/images/e1.jpg", 
       "/images/e1.jpg", "/images/e1.jpg", 
       "/images/e1.jpg", "/images/e1.jpg", 
+      "/images/e1.jpg", "/images/e1.jpg", "/images/e1.jpg", 
       "/images/e1.jpg", "/images/e1.jpg", 
       
     ];
@@ -26,13 +27,22 @@ export default function HighlightExhibitions() {
       </button>
     </div>
         </div>
-        <div className=" flex flex-center flex-wrap gap-4 mx-auto justyfy-between ">
-          {images.map((src, index) => (
-            <div key={index} className="overflow-hidden">
-              <img width={315} height={270} src={src} alt={`Gallery ${index + 1}`} className="w-full  object-cover hover:scale-105 transition duration-300" />
-            </div>
-          ))}
-        </div>
+        <div className="w-full  bg-white py-8">
+  <div className="flex flex-wrap justify-center gap-1">
+    {images.map((src, index) => (
+      <div
+        key={index}
+        className="w-[16.3%] h-[270px] overflow-hidden rounded-lg shadow-md"
+      >
+        <img
+          src={src}
+          alt={`Gallery ${index + 1}`}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+    ))}
+  </div>
+</div>
       </div>
     );
   }

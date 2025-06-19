@@ -31,13 +31,15 @@ export default function Header() {
         {/* Main Navbar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between px-4 md:px-12 py-4 bg-white relative">
           {/* Logo and Date */}
-          <div className="flex items-center gap-4 mb-4 md:mb-0">
+          <div className="flex items-center gap-4 mb-4 md:mb-0 cursor-pointer">
+            <a href="/">
             <Image
               src="/images/logo.png"
               alt="PharmaEx Logo"
               width={260}
               height={54}
             />
+            </a>
             <div className="text-xs md:text-sm text-gray-800 leading-tight">
               <p>02–03 October, 2025</p>
               <p>
@@ -63,12 +65,22 @@ export default function Header() {
     </div>
   </div>
 
-  <div className="relative">
+  <div className="relative group">
     <button className="hover:text-green-700">Events</button>
+    <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 ease-in-out z-50">
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Our Team</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Mission</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">History</a>
+    </div>
   </div>
 
-  <div className="relative">
+  <div className="relative group">
     <button className="hover:text-green-700">Resources</button>
+    <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 ease-in-out z-50">
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Our Team</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Mission</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">History</a>
+    </div>
   </div>
 
   <a href="#" className="hover:text-green-700">Contact Us</a>
