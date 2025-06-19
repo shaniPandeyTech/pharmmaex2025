@@ -29,10 +29,10 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-bold text-green-500">Quick Links</h3>
           <ul className="mt-3 space-y-2 text-sm text-gray-300">
-            <li><Link href="#">Exhibitor Form</Link></li>
-            <li><Link href="#">Visitor Registration</Link></li>
-            <li><Link href="#">Photo Gallery</Link></li>
-            <li><Link href="#">About Us</Link></li>
+            <li><Link href="/exhibitor-registration">Exhibitor Form</Link></li>
+            <li><Link href="/visitor-registration">Visitor Registration</Link></li>
+            <li><Link href="/gallery">Photo Gallery</Link></li>
+            <li><Link href="/about-us">About Us</Link></li>
             <li><Link href="#">Past Events</Link></li>
             <li><Link href="#">Contact Us</Link></li>
           </ul>
@@ -44,7 +44,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-gray-300">
             <li><Link href="#">Sitemap</Link></li>
             <li><Link href="#">Terms & Condition</Link></li>
-            <li><Link href="#">Privacy Policy</Link></li>
+            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
           </ul>
         </div>
 

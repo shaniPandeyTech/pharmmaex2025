@@ -11,9 +11,9 @@ export default function Header() {
 
   return (
     <header className="w-full border-b border-gray-200 text-sm">
-      <div className="container mx-auto max-w-[1440px]">
+      <div className=" mx-auto max-w-[1440px]">
         {/* Top Contact Bar */}
-        <div className="flex justify-between items-center px-4 md:px-12 py-2 text-gray-700 text-xs bg-white border-b border-gray-100">
+        <div className="flex justify-between items-center px-4 md:px-12 py-4 text-gray-700 text-xs bg-white border-b border-gray-100">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <span>+91-92580 02828, +91-70173 36797</span>
@@ -49,90 +49,31 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="flex flex-wrap gap-6 items-center justify-center text-sm font-medium text-gray-700 relative z-50">
-            <a href="#" className="text-green-700 font-semibold">
-              Home
-            </a>
+          <nav class="flex flex-wrap gap-6 items-center justify-center text-sm font-medium text-gray-700 relative z-50">
+  <a href="#" class="text-green-700 font-semibold">Home</a>
 
-            {/* About Us Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => toggleMenu("about")}
-                className="hover:text-green-700"
-              >
-                About Us
-              </button>
-              {openMenu === "about" && (
-                <div className="absolute bg-white shadow-md border mt-2 py-2 w-48 z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Who We Are
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Our Team
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Press Release
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Privacy Policy
-                  </a>
-                </div>
-              )}
-            </div>
 
-            {/* Events Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => toggleMenu("events")}
-                className="hover:text-green-700"
-              >
-                Events
-              </button>
-              {openMenu === "events" && (
-                <div className="absolute bg-white shadow-md border mt-2 py-2 w-48 z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Upcoming Events
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Past Exhibitors
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Sponsors & Associations
-                  </a>
-                </div>
-              )}
-            </div>
 
-            {/* Resources Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => toggleMenu("resources")}
-                className="hover:text-green-700"
-              >
-                Resources
-              </button>
-              {openMenu === "resources" && (
-                <div className="absolute bg-white shadow-md border mt-2 py-2 w-48 z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Download
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Review
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Testimonial
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Gallery
-                  </a>
-                </div>
-              )}
-            </div>
+  <div class="relative group">
+    <button class="hover:text-green-700">About Us</button>
+    <div class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 ease-in-out z-50">
+      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Our Team</a>
+      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Mission</a>
+      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">History</a>
+    </div>
+  </div>
 
-            <a href="#" className="hover:text-green-700">
-              Contact Us
-            </a>
-          </nav>
+  <div class="relative">
+    <button class="hover:text-green-700">Events</button>
+  </div>
+
+  <div class="relative">
+    <button class="hover:text-green-700">Resources</button>
+  </div>
+
+  <a href="#" class="hover:text-green-700">Contact Us</a>
+</nav>
+
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3 mt-4 md:mt-0">
