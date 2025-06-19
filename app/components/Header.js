@@ -49,29 +49,29 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav class="flex flex-wrap gap-6 items-center justify-center text-sm font-medium text-gray-700 relative z-50">
-  <a href="#" class="text-green-700 font-semibold">Home</a>
+          <nav className="flex flex-wrap gap-6 items-center justify-center text-sm font-medium text-gray-700 relative z-50">
+  <a href="#" className="text-green-700 font-semibold">Home</a>
 
 
 
-  <div class="relative group">
-    <button class="hover:text-green-700">About Us</button>
-    <div class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 ease-in-out z-50">
-      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Our Team</a>
-      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Mission</a>
-      <a href="#" class="block px-4 py-2 hover:bg-green-50 hover:text-green-700">History</a>
+  <div className="relative group">
+    <button className="hover:text-green-700">About Us</button>
+    <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-200 ease-in-out z-50">
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Our Team</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">Mission</a>
+      <a href="#" className="block px-4 py-2 hover:bg-green-50 hover:text-green-700">History</a>
     </div>
   </div>
 
-  <div class="relative">
-    <button class="hover:text-green-700">Events</button>
+  <div className="relative">
+    <button className="hover:text-green-700">Events</button>
   </div>
 
-  <div class="relative">
-    <button class="hover:text-green-700">Resources</button>
+  <div className="relative">
+    <button className="hover:text-green-700">Resources</button>
   </div>
 
-  <a href="#" class="hover:text-green-700">Contact Us</a>
+  <a href="#" className="hover:text-green-700">Contact Us</a>
 </nav>
 
 

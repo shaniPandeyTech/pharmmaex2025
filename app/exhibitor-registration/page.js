@@ -1,13 +1,20 @@
 "use client";
 
+import BannerSection from "../components/BannerSection";
 import MumbaiRegistration from "../components/Registration";
+import ExhibitorRegistrationForm from "./ExhibitorRegistrationForm";
 
 export default function Gallery() {
 
 
   return (
-    <section className="py-16 bg-white">
-     <h2>Gallery</h2>
+    <section className=" bg-white">
+     <BannerSection
+        imageUrl="/images/exhibitor-bg.jpg" 
+        title="Exhibitor registration form"
+        breadcrumb="Exhibitor registration form"
+      />
+     <ExhibitorRegistrationForm />
      <MumbaiRegistration />
     </section>
   );
