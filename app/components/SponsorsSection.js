@@ -2,13 +2,13 @@ import Image from "next/image"; // For Next.js Image optimization
 
 export default function SponsorsSection() {
   const sponsors = [
-    { title: "Industry Leaders", logo: "/images/logos/logo1.png" },
-    { title: "Top Rankers", logo: "/images/logos/logo2.png" },
-    { title: "Pharma Player", logo: "/images/logos/logo3.png" },
-    { title: "Pharma Champion", logo: "/images/logos/logo5.png" },
-    { title: "Supported Partners", logo: "/images/logos/logo1.png" },
-    { title: "Supported Partners", logo: "/images/logos/logo2.png" },
-    { title: "Supported Partners", logo: "/images/logos/logo3.png" },
+    { title: "Industry Leaders", logo: "/images/logos/image1.webp" },
+    { title: "Top Rankers", logo: "/images/logos/image2.webp" },
+    { title: "Pharma Player", logo: "/images/logos/image3.webp" },
+    { title: "Pharma Champion", logo: "/images/logos/image4.webp" },
+    { title: "Supported Partners", logo: "/images/logos/image5.webp" },
+    { title: "Supported Partners", logo: "/images/logos/image6.webp" },
+    { title: "Supported Partners", logo: "/images/logos/image7.webp" },
   ];
 
   return (

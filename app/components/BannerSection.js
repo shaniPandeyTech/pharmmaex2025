@@ -7,7 +7,8 @@ export default function BannerSection({ imageUrl, title = "Who we are", breadcru
           borderRadius: "0 0 15px 15px",
         }}
       >
-        <div className="absolute w-full h-full left-0 right-0 bottom-0 top-0 inset-0 bg-black opacity-30"></div>
+        <div className="absolute w-full h-full left-0 right-0 bottom-0 top-0 inset-0 bg-black opacity-30">
+        </div>
         <div className="relative z-10 text-center ">
           <h1 className="text-4xl font-bold">{title}</h1>
           <p className="mt-2">
