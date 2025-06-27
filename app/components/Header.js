@@ -83,7 +83,7 @@ export default function Header() {
     </div>
   </div>
 
-  <a href="#" className="hover:text-green-700">Contact Us</a>
+  <a href="/contact-us" className="hover:text-green-700">Contact Us</a>
 </nav>
 
 

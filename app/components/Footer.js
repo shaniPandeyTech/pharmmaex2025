@@ -33,8 +33,8 @@ export default function Footer() {
             <li><Link href="/visitor-registration">Visitor Registration</Link></li>
             <li><Link href="/gallery">Photo Gallery</Link></li>
             <li><Link href="/about-us">About Us</Link></li>
-            <li><Link href="#">Past Events</Link></li>
-            <li><Link href="#">Contact Us</Link></li>
+            <li><Link href="/past-exhibitions">Past Events</Link></li>
+            <li><Link href="/contact-us">Contact Us</Link></li>
           </ul>
         </div>
 
