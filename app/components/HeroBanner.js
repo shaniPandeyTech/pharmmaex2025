@@ -1,6 +1,40 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 import Image from 'next/image';
 
 export default function HeroBanner() {
+
+  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(getTimeLeft());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  function getTimeLeft() {
+    const endTime = new Date("2025-12-31T23:59:59"); // 🎯 Target date
+    const now = new Date();
+    const diff = endTime - now;
+
+    const totalSeconds = Math.floor(diff / 1000);
+
+    const days = Math.floor(totalSeconds / (60 * 60 * 24));
+    const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+    const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+    const seconds = totalSeconds % 60;
+
+    return {
+      days: days >= 0 ? days : 0,
+      hours: hours >= 0 ? hours : 0,
+      minutes: minutes >= 0 ? minutes : 0,
+      seconds: seconds >= 0 ? seconds : 0,
+    };
+  }
+
   return (
     <section className="relative h-[600px] w-full overflow-hidden rounded-t-3xl shadow-md bg-gray-300 flex items-center justify-center">
       {/* Video Background */}
@@ -23,16 +57,20 @@ export default function HeroBanner() {
             {/* Countdown */}
             <div className="bg-white/30 backdrop-blur-md text-white rounded-2xl p-6 min-w-[140px] text-center space-y-4 font-semibold">
               <div>
-                <p className="text-3xl">130</p>
+                <p className="text-3xl">{timeLeft.days}</p>
                 <p className="text-sm">Days</p>
               </div>
               <div>
-                <p className="text-2xl">3,105</p>
+                <p className="text-2xl">{timeLeft.hours.toLocaleString()}</p>
                 <p className="text-sm">Hours</p>
               </div>
               <div>
-                <p className="text-xl">1,86,347</p>
+                <p className="text-xl">{timeLeft.minutes.toLocaleString()}</p>
                 <p className="text-sm">Minutes</p>
+              </div>
+              <div>
+                <p className="text-lg">{timeLeft.seconds.toLocaleString()}</p>
+                <p className="text-sm">Seconds</p>
               </div>
             </div>
 
