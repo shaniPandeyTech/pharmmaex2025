@@ -16,7 +16,7 @@ export default function Header() {
     <header className="w-full border-b border-gray-200 text-sm">
       <div className="mx-auto max-w-[1440px]">
         {/* Top Bar */}
-        <div className="px-4 py-3 text-xs text-gray-700 border-b border-gray-100 bg-white flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+        <div className="hidden md:block px-4 py-3 text-xs text-gray-700 border-b border-gray-100 bg-white flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
           <div className="flex flex-col sm:flex-row items-center gap-2">
             <span>📞 +91-92580 02828, +91-70173 36797</span>
             <span className="hidden sm:inline-block">| contact@pharmmaex.com</span>
@@ -28,7 +28,7 @@ export default function Header() {
 
         {/* Main Navbar */}
         <div className="px-4 py-4 bg-white flex justify-between items-center relative">
-          {/* Left: Hamburger + Logo */}
+          <div className="flex  gap-3">
           <div className="flex items-center gap-3">
             {/* Hamburger Icon */}
             <button
@@ -50,13 +50,15 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Date (Desktop only) */}
+        
           <div className="hidden md:block text-xs text-gray-800 leading-tight">
             <p>02–03 October, 2025</p>
             <p>
               Bombay Exhibition Centre,<br />Mumbai
             </p>
           </div>
+          </div>
+
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex md:items-center gap-6 text-sm font-medium text-gray-700">
