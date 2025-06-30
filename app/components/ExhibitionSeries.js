@@ -59,7 +59,7 @@ export default function ExhibitionSeries() {
       };
     }
     if (timeLeft.total <= 0) {
-      return <p className="text-red-600 font-bold text-xl">Time's up!</p>;
+      return <p className="text-red-600 font-bold text-xl">{"Time's up!"}</p>;
     }
 
 

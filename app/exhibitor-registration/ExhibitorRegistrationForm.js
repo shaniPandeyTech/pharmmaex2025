@@ -93,7 +93,7 @@ const ExhibitorRegistrationForm = () => {
           <div className="col-span-1 md:col-span-2 flex justify-between items-center mt-6">
             <div className="flex items-center gap-2">
               <input type="checkbox" />
-              <label>I'm not a robot</label>
+              <label>{"I'm not a robot"}</label>
             </div>
             <button type="submit" className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Submit</button>
           </div>

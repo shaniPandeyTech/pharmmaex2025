@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion"; // <-- install framer-motion
+import Link from "next/link"; // Add this at the top with your imports
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,14 +41,14 @@ export default function Header() {
             </button>
 
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/images/logo.png"
                 alt="PharmaEx Logo"
                 width={160}
                 height={50}
               />
-            </a>
+            </Link>
           </div>
 
         
