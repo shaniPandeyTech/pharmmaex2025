@@ -8,6 +8,7 @@ const keySponsors = [
   { label: "Supported Partners", logo: "/images/sponsors/sigma.png" },
   { label: "Supported Partners", logo: "/images/sponsors/cynak.png" },
   { label: "Supported Partners", logo: "/images/sponsors/sb.png" },
+  { label: "Pharma Champion", logo: "/images/sponsors/nexkem.png" },
 ];
 
 const exhibitors = [
@@ -50,14 +51,14 @@ const SponsorsAndExhibitors = () => {
       <div className="container mx-auto">
       {/* Key Sponsors */}
       <h2 className="text-3xl font-bold text-center mb-10">Our Key Sponsors</h2>
-
-      <div className="flex flex-wrap justify-center gap-6 mb-16">
+      <div className="mx-auto w-[1090px]">
+      <div className="flex flex-wrap justify-center gap-6 mb-16 ">
         {keySponsors.map((sponsor, index) => (
           <div
             key={index}
             className="flex flex-col items-center bg-gray-100 px-6 py-4 rounded-lg shadow-sm w-[240px] flex-wrap justify-center"
           >
-            <span className="text-xs font-semibold text-gray-600 mb-2 text-center">
+            <span className="text-xs block font-semibold text-gray-600 text-center border-b border-gray-400 w-full mb-4 pb-2">
               {sponsor.label}
             </span>
             <img
@@ -70,6 +71,8 @@ const SponsorsAndExhibitors = () => {
           </div>
         ))}
       </div>
+
+        </div>
 
       {/* Exhibitors */}
       <h2 className="text-3xl font-bold text-center mb-10">Our Exhibitors</h2>
