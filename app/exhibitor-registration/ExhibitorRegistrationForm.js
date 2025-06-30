@@ -8,7 +8,7 @@ const ExhibitorRegistrationForm = () => {
       {/* Heading Section */}
       <div className="text-center space-y-2 mb-6">
         <h1 className="heading mb-10">Exhibitor Space Registration Form</h1>
-        <p className="text-gray-700 text-[22px]">
+        <p className="text-gray-700 text-[16px] lg:text-[22px]">
           Exhibition Date & Time: <span className="text-green-600 font-medium">October 3rd–4rd, 2025, 10:00 AM to 6:00 PM</span><br />
           Exhibition Venue: <span className="text-green-600 font-medium">Bombay Exhibition Centre NESCO, Goregaon, Mumbai, Maharashtra 400063</span>
         </p>

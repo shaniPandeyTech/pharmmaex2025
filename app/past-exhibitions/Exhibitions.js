@@ -57,7 +57,7 @@ const Exhibitions = () => {
               } items-end gap-8`}
             >
               {/* Image */}
-              <div className="w-[925px h-[480px] ">
+              <div className="w-full h-auto lg:w-[925px lg:h-[480px] ">
                 <img
                   src={item.image}
                   alt={item.city}
@@ -69,18 +69,18 @@ const Exhibitions = () => {
 
               {/* Text */}
               <div
-                className={`w-[420px] py-[130px] ${
+                className={` w-full h-auto      lg:w-[420px] lg:py-[130px] ${
                   isEvenRow ? "flex flex-col items-start" : "text-left"
                 }`}
               >
                 <span className="inline-block bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2">
                   {item.edition}
                 </span>
-                <h3 className="text-5xl font-bold text-green-700 mb-7">
+                <h3 className=" text-2xl lg:text-5xl font-bold text-green-700 mb-4">
                   {item.city}–{item.year}
                 </h3>
-                <p className="text-gray-700 text-2xl mb-1">{item.date}</p>
-                <p className="text-gray-600 text-2xl ">{item.venue}</p>
+                <p className="text-gray-700 text-base lg:text-2xl mb-1">{item.date}</p>
+                <p className="text-gray-600 text-base lg:text-2xl ">{item.venue}</p>
               </div>
             </div>
           );

@@ -7,7 +7,7 @@ export default function VisitorForm() {
          <div className="container mx-auto text-center !mt-10 !mb-20">
         <h2 className="heading mb-4">Welcome to PharmmaEx</h2>
 
-        <div className="text-[22px] text-center">Join the largest pharmaceutical formulation exhibition in Ahmedabad and be part of an exclusive gathering of pharma professionals, innovators, and industry leaders. Complete the form below to register as a visitor and secure your entry pass. </div>
+        <div className="text-[16px] lg:text-[22px] text-center">Join the largest pharmaceutical formulation exhibition in Ahmedabad and be part of an exclusive gathering of pharma professionals, innovators, and industry leaders. Complete the form below to register as a visitor and secure your entry pass. </div>
    
    </div>
    

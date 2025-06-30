@@ -13,9 +13,9 @@ export default function HighlightExhibitions() {
     ];
   
     return (
-      <div className="py-12 mx-auto">
+      <div className="py-4 lg:py-12 mx-auto">
         <div className="container mx-auto">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-4 py-6 max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between  mx-auto">
       
       <h2 className="heading">Highlight of Exhibitions</h2>
 
@@ -32,7 +32,7 @@ export default function HighlightExhibitions() {
     {images.map((src, index) => (
       <div
         key={index}
-        className="w-[16.3%] h-[270px] overflow-hidden rounded-lg shadow-md"
+        className="w-[32%] h-auto lg:w-[16.3%] lg:h-[270px] overflow-hidden rounded-lg shadow-md"
       >
         <img
           src={src}
