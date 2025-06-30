@@ -17,7 +17,7 @@ export default function HighlightExhibitions() {
         <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-4 py-6 max-w-7xl mx-auto">
       
-      <h2 className="text-2xl font-bold">Highlight of Exhibitions</h2>
+      <h2 className="heading">Highlight of Exhibitions</h2>
 
      
       <button

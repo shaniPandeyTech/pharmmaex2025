@@ -36,7 +36,7 @@ export default function HeroBanner() {
   }
 
   return (
-    <section className="relative h-[600px] w-full overflow-hidden rounded-t-3xl shadow-md bg-gray-300 flex items-center justify-center">
+    <section className="relative h-auto lg:h-[600px] w-full overflow-hidden  lg:py-0 rounded-t-3xl shadow-md bg-gray-300 flex items-center justify-center">
       {/* Video Background */}
       <video
         autoPlay
@@ -51,11 +51,11 @@ export default function HeroBanner() {
 
       {/* Overlay content */}
       <div className="relative z-20 w-full h-full bg-black/40">
-        <div className="container mx-auto px-4 h-full flex items-center justify-center">
+        <div className="container mx-auto  h-full flex items-center justify-center">
           <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6">
 
             {/* Countdown */}
-            <div className="bg-white/30 backdrop-blur-md text-white rounded-2xl p-6 min-w-[140px] text-center space-y-4 font-semibold">
+            <div className="bg-white/30 backdrop-blur-md text-white rounded-2xl p-6 w-full flex justify-between   text-center space-y-4 font-semibold">
               <div>
                 <p className="text-3xl">{timeLeft.days}</p>
                 <p className="text-sm">Days</p>

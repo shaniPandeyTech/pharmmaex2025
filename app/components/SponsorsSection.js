@@ -20,7 +20,7 @@ export default function SponsorsSection() {
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="bg-white w-[250px] rounded-2xl shadow border p-4 flex flex-col items-center text-center"
+              className="bg-white w-[150px] lg:w-[250px] rounded-2xl shadow border p-4 flex flex-col items-center text-center"
             >
               <p className="text-sm font-medium mb-2 border-b pb-1 w-full">
                 {sponsor.title}

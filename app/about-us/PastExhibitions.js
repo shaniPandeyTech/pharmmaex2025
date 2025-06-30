@@ -46,14 +46,14 @@ export default function PastExhibitions() {
   });
   const cities = ['01 Bangalore 2024', '02 Pune 2024', '03 Ahmedabad 2024', '04 Hyderabad 2025'];
   return (
-    <section className="px-4 py-12 max-w-7xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">Our Past Exhibitions</h2>
+    <section className="px-4 py-12 container mx-auto mt-[80px]">
+      {/* <h2 className="heading mb-8 text-center">Our Past Exhibitions</h2> */}
 
       {/* Top Row */}
       <div className="flex flex-col lg:flex-row justify-between gap-8 mb-8">
         {/* Left Column */}
         <div className="lg:w-1/2">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">Our Past Exhibitions</h2>
+          <h2 className="heading mb-2">Our Past Exhibitions</h2>
           <p className="text-sm sm:text-base text-gray-700">
             PharmmaEx organizes exhibitions and trade shows that highlight industry innovations, breakthroughs, and trends.
             These events foster collaboration, learning, and growth, offering a unique platform for professionals,
@@ -97,7 +97,7 @@ export default function PastExhibitions() {
       </div>
 
       {/* Dot Navigation */}
-      <div className="flex justify-center gap-2 mt-6">
+      <div className="flex justify-center gap-2 mt-6 ">
         {Array.from({ length: Math.ceil(events.length / 3) }).map((_, idx) => (
           <button
             key={idx}

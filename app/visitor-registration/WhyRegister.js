@@ -13,8 +13,8 @@ const reasons = [
 
 export default function WhyRegister() {
   return (
-    <section className="py-12 px-4 bg-white text-center max-w-7xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-10">Why Register for PharmmaEx?</h2>
+    <section className="py-12 px-4 bg-white text-center container !mt-[100px] mx-auto">
+      <h2 className="heading mb-10">Why Register for PharmmaEx?</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {reasons.map((text, index) => (

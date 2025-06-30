@@ -5,29 +5,29 @@ const ContactSection = () => {
   return (
     <>
     <section className="bg-white pb-16 px-6 md:px-20">
-      <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto">
       {/* Contact Info & Form */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
+      <div className=" flex gap-x-12 items-center mb-[100px]">
         {/* Left Info Box */}
-        <div className="bg-green-700 text-white p-8 rounded-lg space-y-6">
-          <h2 className="text-2xl font-bold">Devasya Media Pvt. Ltd.</h2>
-          <p>
-            <span className="inline-block mr-2">📍</span>
-            Bhardwaj Complex, Near Mobile Tower, Behind HDFC Bank, Krishna Nagar, Bulandshahr (U.P.)-203001
-          </p>
-          <p>
-            <span className="inline-block mr-2">📧</span>
-            contact@pharmmaex.com
-          </p>
-          <p>
-            <span className="inline-block mr-2">📞</span>
-            (207) 555-0119, +91-701 733 6797
-          </p>
-          <hr className="border-white/50" />
+        <div className="bg-green-700  max-w-full lg:max-w-2xl   text-white p-8 pt-20 pb-20 rounded-lg space-y-6  -mt-12">
+          <h2 className="text-4xl font-bold">Devasya Media Pvt. Ltd.</h2>
+          <div className="text-2xl fle gap-2">
+          <span className="inline-block mr-2"><icon src="/images/icon/location.svg" width={40} height={40}  /></span>
+           <span> Bhardwaj Complex, Near Mobile Tower, Behind HDFC Bank, Krishna Nagar, Bulandshahr (U.P.)-203001</span>
+          </div>
+          <div className="text-2xl fle gap-2 my-12">
+          <span className="inline-block mr-2"><icon src="/images/icon/message.svg"  width={40} height={40}/></span>
+           <span> contact@pharmmaex.com </span>
+          </div>
+          <div className="text-2xl fle gap-2">
+            <span className="inline-block mr-2"><icon src="/images/icon/phone.svg"  width={40} height={40}/></span>
+           <span> (207) 555-0119, +91-701 733 6797 </span>
+          </div>
+          <hr className="border-white/50 mt-12 mb-12"  />
           <div>
-            <h3 className="text-lg font-semibold">Exhibition Venue–Mumbai</h3>
-            <p>Bombay Exhibition Centre (NESCO), Mumbai</p>
-            <p>02–03 October, 2025</p>
+            <h3 className="text-4xl font-semibold mb-8">Exhibition Venue–Mumbai</h3>
+            <p className="text-2xl mb-6">Bombay Exhibition Centre (NESCO), Mumbai</p>
+            <p className="text-2xl">02–03 October, 2025</p>
           </div>
           <div className="flex gap-4 mt-4">
             <button className="border border-white text-white px-4 py-2  hover:bg-white hover:text-green-700 transition">
@@ -52,8 +52,8 @@ const ContactSection = () => {
               <input type="text" placeholder="City" className="inputStyle" />
             </div>
             <textarea placeholder="Your message" className="input h-28 resize-none" />
-            <div className="bg-gray-100 border p-4 rounded-md text-sm text-gray-600">
-              ☐ I’m not a robot (Google reCAPTCHA placeholder)
+            <div className="">
+           <img src="/images/captcha.png" width={272} height={72}  />
             </div>
             <button
               type="submit"
@@ -67,7 +67,7 @@ const ContactSection = () => {
 
       {/* Contact Cards */}
       <div>
-        <h2 className="text-2xl font-bold text-center mb-8">Exhibition Queries</h2>
+        <h2 className="text-5xl font-bold text-center mb-8">Exhibition Queries</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Shivam */}
           <div className="flex items-center gap-4 border-1 border-green-400 p-4 rounded-lg">
@@ -76,12 +76,13 @@ const ContactSection = () => {
               alt="Shivam Sharma"
               width={209}
               height={209}
-              className="w-20 h-20  object-cover"
+              
+              className="w-[209px] h-[209px]  object-cover"
             />
             <div>
-              <h3 className="font-bold text-lg">Shivam Sharma</h3>
-              <p className="text-sm text-gray-600">Managing Director – PharmaEx</p>
-              <p className="text-sm text-gray-700 mt-1">
+              <h3 className="font-bold text-3xl">Shivam Sharma</h3>
+              <p className="text-sm text-gray-600 mb-5">Managing Director – PharmaEx</p>
+              <p className="text-xl text-gray-700 mt-1">
                 M. +91-9258002828, +91-701 733 6797 <br />
                 E. shivam.sharma@pharmmaex.com
               </p>
@@ -89,23 +90,24 @@ const ContactSection = () => {
           </div>
 
           {/* Vivek */}
-          <div className="flex items-center gap-4 border-1 border-green-400 p-4 rounded-lg">
+          <div className="flex items-center gap-4 border-1 border-green-400 p-4 rounded-3xl">
             <img
               src="/images/vivek.png"
               width={209}
               height={209}
               alt="Vivek Agarwal"
-              className="w-20 h-20  object-cover"
+              className="w-[209px] h-[209px]  object-cover"
             />
             <div>
-              <h3 className="font-bold text-lg">Vivek Agarwal</h3>
-              <p className="text-sm text-gray-600">Operation Manager – PharmaEx</p>
-              <p className="text-sm text-gray-700 mt-1">
+              <h3 className="font-bold text-3xl">Vivek Agarwal</h3>
+              <p className="text-sm text-gray-600 mb-5">Operation Manager – PharmaEx</p>
+              <p className="text-xl text-gray-700 mt-1">
                 M. +91-9258002828, +91-701 733 6797 <br />
                 E. vivek.agarwal@pharmmaex.com
               </p>
             </div>
           </div>
+          
         </div>
       </div>
 </div>

@@ -31,12 +31,12 @@ export default function ExhibitionStats() {
   }, []);
 
   return (
-    <section className="bg-[url('/images/bg-what.jpg')] bg-cover bg-center py-16">
+    <section className="bg-[url('/images/bg-what.jpg')] bg-cover bg-center py-4 lg:py-16">
       <div className="max-w-[1440px] mx-auto px-4">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between lg:mb-10">
           <div>
-            <h2 className="text-white text-2xl md:text-3xl font-bold leading-snug">
-              What’s in the <br className="sm:hidden" /> Exhibition
+            <h2 className="text-white text-2xl md:text-3xl font-bold leading-snug whitespace-nowrap mb-8">
+              What’s in the  Exhibition
             </h2>
           </div>
 
@@ -44,7 +44,7 @@ export default function ExhibitionStats() {
             {stats.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-[#2b2b2b]/80 backdrop-blur-md text-white rounded-xl px-4 py-10 text-center min-w-[240px]"
+                className="bg-[#2b2b2b]/80 backdrop-blur-md text-white rounded-xl px-4 py-10 text-center min-w-[150px] lg:min-w-[240px]"
               >
                 <div className="text-3xl font-bold mb-1">
                   {counts[idx].toLocaleString()}+

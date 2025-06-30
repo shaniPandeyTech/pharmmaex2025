@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function AboutPharmaEx() {
   return (
-    <section className="px-4 p-16">
+    <section className="lg:px-4 p-4 lg:p-16">
       {/* Top Heading Section */}
       <div className="container mx-auto">
       <div className="text-center max-w-3xl mx-auto mb-16">

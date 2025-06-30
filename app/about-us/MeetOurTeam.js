@@ -8,28 +8,23 @@ const events = [
   {
   name: 'Shivam Sharma',
   dessination: 'Marketing Manager',
-    image: '/images/team1.jpg',
+    image: '/images/icon/meetteam/shivam.png',
   },
   {
-    name: 'Shivam Sharma',
-    dessination: 'Marketing Manager',
-    image: '/images/team1.jpg',
+    name: 'Vivek Agrawal',
+    dessination: 'Operation Manager',
+    image: '/images/icon/meetteam/vivek.png',
   },
   {
-    name: 'Shivam Sharma',
+    name: 'Pankaj Sharma',
     dessination: 'Marketing Manager',
-    image: '/images/team1.jpg'
+    image: '/images/icon/meetteam/pankaj.png',
   },
   {
-    name: 'Shivam Sharma',
-    dessination: 'Marketing Manager',
-    image: '/images/team1.jpg',
-  },
-  {
-    name: 'Shivam Sharma',
-    dessination: 'Marketing Manager',
-    image: '/images/team1.jpg',
-  },
+    name: 'Vijendra Kumar',
+    dessination: 'Event Manager',
+    image: '/images/icon/meetteam/vijendra.png',
+  }
 ];
 
 export default function MeetOurTeam() {
@@ -46,8 +41,8 @@ export default function MeetOurTeam() {
   });
   const cities = ['01 Bangalore 2024', '02 Pune 2024', '03 Ahmedabad 2024', '04 Hyderabad 2025'];
   return (
-    <section className="px-4 py-12 max-w-7xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">Our Past Exhibitions</h2>
+    <section className="px-4 py-12 container mx-auto !mt-[40px]">
+      <h2 className="heading mb-8 ">Our Past Exhibitions</h2>
 
  
       {/* Image Slider */}

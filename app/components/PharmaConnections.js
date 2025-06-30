@@ -8,7 +8,7 @@ export default function PharmaConnections() {
       <div className="grid md:grid-cols-2 gap-10">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Pharma Connections Made Easy</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold mb-4">Pharma Connections Made Easy</h2>
           <p className="text-gray-700 mb-4">
             PharmmaEx is set to make history as the first-of-its-kind event in the bustling commercial capital of India – Mumbai.
             This three-day business extravaganza will showcase the very best of the pharmaceutical industry, featuring.

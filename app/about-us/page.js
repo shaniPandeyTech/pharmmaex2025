@@ -1,6 +1,7 @@
 "use client";
 
 import BannerSection from "../components/BannerSection";
+import HighlightExhibitions from "../components/HighlightExhibitions";
 import MumbaiRegistration from "../components/Registration";
 import HeroInnovation from "./HeroInnovation";
 import MeetOurTeam from "./MeetOurTeam";
@@ -24,6 +25,9 @@ export default function Aboutus() {
 <WhoWeServe />
       <PastExhibitions />
       <MeetOurTeam />
+
+<HighlightExhibitions />
+
      
      <MumbaiRegistration />
     </section>

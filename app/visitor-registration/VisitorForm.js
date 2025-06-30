@@ -3,7 +3,16 @@
 
 export default function VisitorForm() {
   return (
-    <section className="flex flex-col lg:flex-row items-start gap-8 p-4 lg:p-12 max-w-7xl mx-auto">
+    <>
+         <div className="container mx-auto text-center !mt-10 !mb-20">
+        <h2 className="heading mb-4">Welcome to PharmmaEx</h2>
+
+        <div className="text-[22px] text-center">Join the largest pharmaceutical formulation exhibition in Ahmedabad and be part of an exclusive gathering of pharma professionals, innovators, and industry leaders. Complete the form below to register as a visitor and secure your entry pass. </div>
+   
+   </div>
+   
+    <section className="flex flex-col lg:flex-row items-center gap-8 p-4 lg:p-12 container mx-auto">
+  
       {/* Left: Image */}
       <div className="w-full lg:w-1/2">
         <img
@@ -15,12 +24,12 @@ export default function VisitorForm() {
 
       {/* Right: Form */}
       <div className="w-full lg:w-1/2">
-        <h1 className="text-3xl font-bold mb-2">Welcome to PharmmaEx</h1>
-        <p className="text-gray-600 mb-6 text-sm">
+        <h1 className="heading mb-8">Welcome to PharmmaEx</h1>
+        {/* <p className="text-gray-600 mb-6 text-sm">
           Join the largest pharmaceutical formulation exhibition in Ahmedabad...
-        </p>
+        </p> */}
 
-        <h2 className="text-xl font-semibold mb-4">Visitor Registration Form</h2>
+        {/* <h2 className="text-xl font-semibold mb-4">Visitor Registration Form</h2> */}
 
         <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Row 1 */}
@@ -71,8 +80,8 @@ export default function VisitorForm() {
           {/* CAPTCHA and Submit */}
           <div className="col-span-1 sm:col-span-2 flex flex-col sm:flex-row items-start sm:items-center  gap-4 mt-4">
            
-            <div className="w-full sm:w-auto border rounded-lg px-4 py-3 bg-gray-100 text-gray-500 text-sm">
-              [I'm not a robot]
+            <div className="">
+             <img src="/images/captcha.png" alt="" />
             </div>
 
             <button
@@ -85,5 +94,6 @@ export default function VisitorForm() {
         </form>
       </div>
     </section>
+    </>
   );
 }

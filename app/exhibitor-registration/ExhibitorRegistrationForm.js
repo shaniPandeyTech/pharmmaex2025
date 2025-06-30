@@ -3,11 +3,13 @@ import React from 'react';
 const ExhibitorRegistrationForm = () => {
   return (
     <div className="min-h-screen bg-white px-4 py-8 md:px-12 lg:px-24">
+
+      
       {/* Heading Section */}
       <div className="text-center space-y-2 mb-6">
-        <h1 className="text-3xl font-bold">Exhibitor Space Registration Form</h1>
-        <p className="text-gray-700 text-sm md:text-base">
-          Exhibition Date & Time: <span className="text-orange-600 font-medium">October 3rd–4rd, 2025, 10:00 AM to 6:00 PM</span><br />
+        <h1 className="heading mb-10">Exhibitor Space Registration Form</h1>
+        <p className="text-gray-700 text-[22px]">
+          Exhibition Date & Time: <span className="text-green-600 font-medium">October 3rd–4rd, 2025, 10:00 AM to 6:00 PM</span><br />
           Exhibition Venue: <span className="text-green-600 font-medium">Bombay Exhibition Centre NESCO, Goregaon, Mumbai, Maharashtra 400063</span>
         </p>
       </div>
@@ -22,7 +24,7 @@ const ExhibitorRegistrationForm = () => {
       </div>
 
       {/* Form Section */}
-      <div className=" relative w-full max-w-5xl mx-auto  shadow-lg p-6 md:p-10 rounded-2xl  z-20">
+      <div class=" !mt-[100px] w-full bg-[linear-gradient(to_bottom,_white_10%,_white_25%,_gray-100_100%)]">
       {/* <div className="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-transparent via-white to-white z-10"></div> */}
         <h2 className="text-2xl font-bold mb-4 text-center">Exhibitor Registration Form</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">

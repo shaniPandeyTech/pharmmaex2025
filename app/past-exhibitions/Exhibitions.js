@@ -43,7 +43,7 @@ const Exhibitions = () => {
   return (
     <section className="py-12 px-4 md:px-12 bg-white">
       <div className="container mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-12">Past Exhibitions</h2>
+      <h2 className="text-3xl font-bold align-bottom mb-12">Past Exhibitions</h2>
 
       <div className="space-y-16">
         {exhibitions.map((item, index) => {
@@ -54,31 +54,33 @@ const Exhibitions = () => {
               key={item.id}
               className={`flex flex-col lg:flex-row ${
                 isEvenRow ? "lg:flex-row-reverse" : ""
-              } items-center gap-8`}
+              } items-end gap-8`}
             >
               {/* Image */}
-              <div className="w-full lg:w-1/2">
+              <div className="w-[925px h-[480px] ">
                 <img
                   src={item.image}
                   alt={item.city}
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
+                  width={925}
+                  height={480}
+                  className="w-full object-cover rounded-lg "
                 />
               </div>
 
               {/* Text */}
               <div
-                className={`w-full lg:w-1/2 ${
-                  isEvenRow ? "text-right" : "text-left"
+                className={`w-[420px] py-[130px] ${
+                  isEvenRow ? "flex flex-col items-start" : "text-left"
                 }`}
               >
                 <span className="inline-block bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2">
                   {item.edition}
                 </span>
-                <h3 className="text-2xl font-bold text-green-700 mb-1">
+                <h3 className="text-5xl font-bold text-green-700 mb-7">
                   {item.city}–{item.year}
                 </h3>
-                <p className="text-gray-700 mb-1">{item.date}</p>
-                <p className="text-gray-600 text-sm">{item.venue}</p>
+                <p className="text-gray-700 text-2xl mb-1">{item.date}</p>
+                <p className="text-gray-600 text-2xl ">{item.venue}</p>
               </div>
             </div>
           );
