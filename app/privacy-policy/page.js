@@ -9,6 +9,7 @@ export default function Gallery() {
 
 
   return (
+    
     <section className=" bg-white">
       <BannerSection
         imageUrl="/images/privacy-bg.jpg" 
