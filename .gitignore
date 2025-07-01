@@ -15,7 +15,6 @@ pids
 *.pid.lock
 
 # Environment files
-.env
 
 # Optional cache and coverage directories
 .cache/
@@ -26,7 +25,7 @@ coverage/
 Thumbs.db
 
 # VSCode settings (optional)
-.vscode/
 
 # Next.js build output
 .next/
+config.bat

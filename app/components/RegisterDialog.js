@@ -14,8 +14,10 @@ const RegisterDialog = ({
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setShowDialog(true);
-            localStorage.setItem("registerdialogshown", true);
+            if(!localStorage.getItem("registerdialogshown")){
+                setShowDialog(true);
+                localStorage.setItem("registerdialogshown", true);
+            }
         }, 5000);
 
         return () => clearTimeout(timer); 
