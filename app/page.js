@@ -20,37 +20,7 @@ import SponsorsSection from "./components/SponsorsSection";
 export default function Home() {
   
   return (
-    <main className="font-sans">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <main>
     <HeroBanner />
     <MarqueeBanner />
     <AboutPharmaEx />
@@ -62,9 +32,6 @@ export default function Home() {
     <ExhibitorSlider />
     <ReviewSlider />
     <MumbaiRegistration />
-
-     
-  
     </main>
   );
 }
