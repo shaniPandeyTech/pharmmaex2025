@@ -15,7 +15,6 @@ pids
 *.pid.lock
 
 # Environment files
-.env
 
 # Optional cache and coverage directories
 .cache/
@@ -30,3 +29,4 @@ Thumbs.db
 
 # Next.js build output
 .next/
+config.bat
