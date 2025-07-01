@@ -1,36 +1,31 @@
 // File: components/AboutPharmaEx.tsx
 
 import Image from 'next/image';
+import styles from './styles/about.module.scss';
 
 export default function AboutPharmaEx() {
   return (
-    <section className="lg:px-4 p-4 lg:p-16">
+    <section className={`lg:px-4 p-4 lg:p-16 bg-white ${styles.aboutSection}`}>
       {/* Top Heading Section */}
       <div className="container mx-auto">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Join This Pharma Exhibition to Network <br />
-          With Leading Industry Professionals.
-        </h2>
-        <p className="text-gray-600 mb-6">
-          Lorem ipsum dolor sit amet consectetur. Quis cras arcu morbi tortor adipiscing varius sed. Non massa
-          volutpat aliquam. Porttitor pulvinar sed in a sed pulvinar ultricies nunc. Arcu vitae non turpis sit
-          convallis sit eget consectetur. Quisque laoreet ullamcorper eget vulputate felis neque. Habitasse mauris
-          nulla egestas dui tortor.
+      <div className={`text-center max-w-3xl mx-auto mb-16 ${styles.joinSection}`}>
+        <h2>Join This Pharma Exhibition to Network With Leading Industry Professionals.</h2>
+        <p>
+          Connect with top pharma manufacturers, suppliers, and innovators at this exclusive exhibition. Explore the latest trends, expand your business network, and discover new growth opportunities. Whether you're in PCD, third-party manufacturing, or bulk supply, this event is your gateway to meaningful collaborations and success in the pharmaceutical industry.
         </p>
         <div className="flex justify-center gap-4">
           <button className="bg-green-600 text-white px-6 py-2 rounded-full font-medium">Pre-Registration</button>
-          <button className="border border-gray-800 px-6 py-2 rounded-full font-medium hover:bg-gray-100">
+          <button className="border border-gray-800 px-6 py-2 rounded-full font-medium text-black">
             Become Exhibitor
           </button>
         </div>
       </div>
 
       {/* About Section */}
-      <div className="md:grid md:grid-cols-2 md:gap-10 items-center">
+      <div className={`md:grid md:grid-cols-2 md:gap-10 items-center ${styles.aboutSection}`}>
         {/* Text */}
         <div>
-          <h3 className="text-2xl font-bold mb-4">About PharmaEx</h3>
+          <h2>About PharmaEx</h2>
           <p className="text-gray-700 mb-6">
             PharmaEx is India’s leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and
             PCD Franchise Business. We bring together manufacturers, distributors, wholesalers, and industry
@@ -63,7 +58,7 @@ export default function AboutPharmaEx() {
             </li>
           </ul>
 
-          <button className="border border-gray-800 px-5 py-2 rounded-full hover:bg-gray-100">Read More</button>
+          <button className="border border-gray-800 text-black px-5 py-2 rounded-full hover:bg-gray-100">Read More</button>
         </div>
 
         {/* Images */}

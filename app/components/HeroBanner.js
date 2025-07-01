@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 import Image from 'next/image';
+import styles from './styles/heroBanner.module.scss';
 
 export default function HeroBanner() {
 
@@ -37,7 +38,6 @@ export default function HeroBanner() {
 
   return (
     <section className="relative h-[600px] w-full overflow-hidden rounded-t-3xl shadow-md bg-gray-300 flex items-center justify-center">
-      {/* Video Background */}
       <video
         autoPlay
         muted
@@ -97,7 +97,7 @@ export default function HeroBanner() {
             </div>
 
             {/* QR Code */}
-            <div className="hidden md:block">
+            <div className={`hidden md:block ${styles.qrCode}`}>
               <div className="bg-white rounded-xl p-2 text-center shadow-xl">
                 <Image
                   src="/images/qr.png"
